@@ -1,0 +1,66 @@
+# =============================================================
+# DATOS — nunca subir (DUA PhysioNet)
+# =============================================================
+data/**
+!data/**/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+!data/eicu-collaborative-research-database-2.0/.gitkeep
+
+# =============================================================
+# MODELOS ENTRENADOS — artefactos pesados, se regeneran
+# =============================================================
+models/**
+!models/.gitkeep
+
+# =============================================================
+# REPORTES GENERADOS — se regeneran al ejecutar
+# =============================================================
+reports/figures/**
+!reports/figures/.gitkeep
+reports/tables/**
+!reports/tables/.gitkeep
+
+# =============================================================
+# ENTORNO Y CONFIGURACIÓN LOCAL
+# =============================================================
+.env
+.venv/
+venv/
+env/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# =============================================================
+# JUPYTER — outputs y checkpoints
+# =============================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# =============================================================
+# SISTEMA OPERATIVO
+# =============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =============================================================
+# IDEs
+# =============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =============================================================
+# MISCELÁNEA
+# =============================================================
+*.log
+*.tmp
+*.bak
+clean_csv/
