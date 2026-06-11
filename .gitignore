@@ -10,10 +10,9 @@ data/**
 # =============================================================
 # MODELOS ENTRENADOS — artefactos pesados, se regeneran
 # =============================================================
-models/**
+mimic_ed_maestro.pkl
 !models/.gitkeep
-*.pkl
-*.ckpt
+
 
 # =============================================================
 # REPORTES GENERADOS — se regeneran al ejecutar

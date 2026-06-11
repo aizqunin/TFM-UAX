@@ -1,0 +1,17 @@
+{
+  "L1": {
+    "C": 23.714140027272748,
+    "class_weight": "balanced",
+    "tfidf_max_features": 100
+  },
+  "L2": {
+    "C": 8.518710399776031,
+    "class_weight": "balanced",
+    "tfidf_max_features": 100
+  },
+  "L3": {
+    "C": 2.609403413343495,
+    "class_weight": "balanced",
+    "tfidf_max_features": 93
+  }
+}

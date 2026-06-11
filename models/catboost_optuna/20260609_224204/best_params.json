@@ -1,0 +1,29 @@
+{
+  "L1": {
+    "learning_rate": 0.0895903437346317,
+    "depth": 7,
+    "l2_leaf_reg": 9,
+    "bagging_temperature": 4.114094890831893,
+    "random_strength": 9.105208298152147e-08,
+    "rsm": 0.6954256428896507,
+    "min_data_in_leaf": 18
+  },
+  "L2": {
+    "learning_rate": 0.07477274499016055,
+    "depth": 4,
+    "l2_leaf_reg": 10,
+    "bagging_temperature": 0.09106449032118703,
+    "random_strength": 0.0009893793716016558,
+    "rsm": 0.8897141011558393,
+    "min_data_in_leaf": 81
+  },
+  "L3": {
+    "learning_rate": 0.08686422687376032,
+    "depth": 4,
+    "l2_leaf_reg": 10,
+    "bagging_temperature": 1.5635950743272535,
+    "random_strength": 1.1962754787618616e-09,
+    "rsm": 0.8727602775103626,
+    "min_data_in_leaf": 80
+  }
+}
