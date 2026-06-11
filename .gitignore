@@ -12,6 +12,8 @@ data/**
 # =============================================================
 models/**
 !models/.gitkeep
+*.pkl
+*.ckpt
 
 # =============================================================
 # REPORTES GENERADOS — se regeneran al ejecutar
@@ -20,6 +22,7 @@ reports/figures/**
 !reports/figures/.gitkeep
 reports/tables/**
 !reports/tables/.gitkeep
+*.html
 
 # =============================================================
 # ENTORNO Y CONFIGURACIÓN LOCAL
@@ -41,6 +44,21 @@ __pycache__/
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
 **/.ipynb_checkpoints/
+
+# =============================================================
+# LOGS DE ENTRENAMIENTO — se regeneran
+# =============================================================
+notebooks/03_models/lightning_logs/
+notebooks/03_models/catboost_info/
+notebooks/03_models/saved_models/
+notebooks/03_models/.pt_tmp/
+notebooks/04_evaluation/.pt_tmp/
+
+# =============================================================
+# ARCHIVOS TEMPORALES
+# =============================================================
+tmp_*.py
+tmp_*.ipynb
 
 # =============================================================
 # SISTEMA OPERATIVO
