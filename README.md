@@ -1,7 +1,7 @@
 # TFM — Predicción de Mortalidad y Deterioro Clínico en Urgencias
 
 **Trabajo Fin de Máster · Máster en Inteligencia Artificial · UAX**  
-**Autor:** Adrian · **Tutor:** Jesús
+**Autor:** Adrian Izquierdo Niño · **Tutor:** Jesús Ruiz
 
 Sistema de soporte a la decisión clínica basado en aprendizaje automático para la predicción de tres desenlaces en urgencias a partir exclusivamente de datos del triage:
 
@@ -61,6 +61,9 @@ CodigoGit/
 ### eICU Collaborative Research Database v2.0 (validación externa)
 1. Firmar el DUA de eICU-CRD: https://physionet.org/content/eicu-crd/
 2. Descargar la base de datos completa y colocarla en `data/eicu-collaborative-research-database-2.0/`.
+
+### MIMIC-IV-ED v3.1 (patients)
+Para este caso solo descargar el siguiente dataset --> `patients.csv`
 
 ### Configurar rutas
 ```bash
@@ -206,11 +209,11 @@ Validación externa (eICU-CRD, 89.594 pacientes, 208 hospitales): caída de AURO
 
 ---
 
-## Hardware recomendado
+## Hardware utilizado
 
-- **CPU**: reproducible en su totalidad, pero lento para LSTM/TabTransformer/NAM (~8–24h).
-- **GPU (CUDA)**: recomendado para los notebooks de Fase 3 con modelos de deep learning (~2–4h total).
-- **RAM**: mínimo 16 GB (`vitalsign.csv` tiene ~1,5 M filas).
+- **CPU**: AMD Ryzen 7 5800H (8 cores / 16 threads)
+- **GPU (CUDA)**:  NVIDIA GeForce RTX 3050 Ti Laptop GPU (4 GB VRAM)
+- **RAM**: 16 GB
 
 ---
 
@@ -222,10 +225,50 @@ Este trabajo sigue las directrices **TRIPOD+AI** (Collins et al., 2024, *BMJ*) p
 
 ## Bibliografía
 
-<!-- Rellena esta sección con las referencias bibliográficas del TFM -->
+### MIMIC-IV-ED v2.2
+@article{PhysioNet-mimic-iv-ed-2.2,
+  author = {Johnson, Alistair and Bulgarelli, Lucas and Pollard, Tom and Celi, Leo Anthony and Mark, Roger and Horng, Steven},
+  title = {{MIMIC-IV-ED}},
+  journal = {{PhysioNet}},
+  year = {2023},
+  month = jan,
+  note = {Version 2.2},
+  doi = {10.13026/5ntk-km72},
+  url = {https://doi.org/10.13026/5ntk-km72}
+}
+
+Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220. RRID:SCR_007345.
+
+### eICU Collaborative Research Database
+@article{PhysioNet-eicu-crd-2.0,
+  author = {Pollard, Tom and Johnson, Alistair and Raffa, Jesse and Celi, Leo Anthony and Badawi, Omar and Mark, Roger},
+  title = {{eICU Collaborative Research Database}},
+  journal = {{PhysioNet}},
+  year = {2019},
+  month = apr,
+  note = {Version 2.0},
+  doi = {10.13026/C2WM1R},
+  url = {https://doi.org/10.13026/C2WM1R}
+}
+
+The eICU Collaborative Research Database, a freely available multi-center database for critical care research. Pollard TJ, Johnson AEW, Raffa JD, Celi LA, Mark RG and Badawi O. Scientific Data (2018). DOI: http://dx.doi.org/10.1038/sdata.2018.178.
+
+Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220. RRID:SCR_007345.
+
+### MIMIC-IV-ED v3.1
+@article{PhysioNet-mimiciv-3.1,
+  author = {Johnson, Alistair and Bulgarelli, Lucas and Pollard, Tom and Gow, Brian and Moody, Benjamin and Horng, Steven and Celi, Leo Anthony and Mark, Roger},
+  title = {{MIMIC-IV}},
+  journal = {{PhysioNet}},
+  year = {2024},
+  month = oct,
+  note = {Version 3.1},
+  doi = {10.13026/kpb9-mt58},
+  url = {https://doi.org/10.13026/kpb9-mt58}
+}
+
+Johnson, A.E.W., Bulgarelli, L., Shen, L. et al. MIMIC-IV, a freely accessible electronic health record dataset. Sci Data 10, 1 (2023). https://doi.org/10.1038/s41597-022-01899-x
+
+Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220. RRID:SCR_007345.
 
 ---
-
-## Contacto
-
-Para dudas sobre el acceso a los datos o la reproducibilidad del código, contactar con el autor a través de la UAX.
